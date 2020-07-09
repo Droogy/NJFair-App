@@ -43,5 +43,8 @@ def location_list():
     return render_template("locations.html", locations=locations)
 
 
-if __name__ == '__main__':
-    app.run(debug=False)
+# if __name__ == '__main__':
+#   app.run(debug=False)
+
+def getApp():
+    return app
