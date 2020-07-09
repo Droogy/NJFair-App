@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Towns</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NJFair</a>
+          <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/">Home</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/location">Filings by Location</a>
+    </li>
+  </ul>
+      </nav>
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">Locations</h1>
+        </div>
+      </div>
+      <div class="container">
+        {% for location in locations %}
+          <p><a href="/location/{{ location.lower().replace(' ', '-') }}">{{ location.title() }}</a></p>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

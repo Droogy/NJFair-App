@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+      <h1 class="display-4">{{ loc_candidacy.NAME }}</h1>
+        <p class="lead">{{ loc_candidacy.LOCATION }}, {{ loc_candidacy.OFFICE }} <strong> File Received at: </strong> {{ loc_candidacy.DATE_RECEIVED }}</p>
+    </div>
+</div>
+<div class="container">
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+{% endblock %}
