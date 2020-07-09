@@ -1,3 +1,4 @@
-from catalog import getApp
+from app.main import app
 
-app = getApp()
+if __name__ == "__main__":
+	app.run()
